@@ -1,5 +1,20 @@
-*/config/development
-*/logs/log-*.php
-*/logs/!index.html
-*/cache/*
-*/cache/!index.html
+# SASS Cache IGNORE #
+#######################
+~/.sass-cache
+css/.sass-cache/
+css/.sass-cache/
+
+
+# Compiled css #
+######################
+css/*.css
+!css/global.css
+
+
+# OS generated files #
+######################
+.DS_Store*
+._*
+ehthumbs.db
+Icon?
+Thumbs.db
