@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"work",
+				"workPage"
+			],
+			[
 				"draw",
 				"drawRect"
 			],
@@ -156,29 +160,91 @@
 	"buffers":
 	[
 		{
-			"file": "wp-config.php",
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/functions.php",
 			"settings":
 			{
-				"buffer_size": 3086,
-				"line_ending": "Windows"
+				"buffer_size": 3296,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php\n/**\n * The base configurations of the WordPress.\n *\n * This file has the following configurations: MySQL settings, Table Prefix,\n * Secret Keys, WordPress Language, and ABSPATH. You can find more information\n * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing\n * wp-config.php} Codex page. You can get the MySQL settings from your web host.\n *\n * This file is used by the wp-config.php creation script during the\n * installation. You don't have to use the web site, you can just copy this file\n * to \"wp-config.php\" and fill in the values.\n *\n * @package WordPress\n */\n\n// ** MySQL settings - You can get this info from your web host ** //\n/** The name of the database for WordPress */\ndefine('DB_NAME', 'database_name_here');\n\n/** MySQL database username */\ndefine('DB_USER', 'username_here');\n\n/** MySQL database password */\ndefine('DB_PASSWORD', 'password_here');\n\n/** MySQL hostname */\ndefine('DB_HOST', 'localhost');\n\n/** Database Charset to use in creating database tables. */\ndefine('DB_CHARSET', 'utf8');\n\n/** The Database Collate type. Don't change this if in doubt. */\ndefine('DB_COLLATE', '');\n\n/**#@+\n * Authentication Unique Keys and Salts.\n *\n * Change these to different unique phrases!\n * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}\n * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.\n *\n * @since 2.6.0\n */\ndefine('AUTH_KEY',         'put your unique phrase here');\ndefine('SECURE_AUTH_KEY',  'put your unique phrase here');\ndefine('LOGGED_IN_KEY',    'put your unique phrase here');\ndefine('NONCE_KEY',        'put your unique phrase here');\ndefine('AUTH_SALT',        'put your unique phrase here');\ndefine('SECURE_AUTH_SALT', 'put your unique phrase here');\ndefine('LOGGED_IN_SALT',   'put your unique phrase here');\ndefine('NONCE_SALT',       'put your unique phrase here');\n\n/**#@-*/\n\n/**\n * WordPress Database Table prefix.\n *\n * You can have multiple installations in one database if you give each a unique\n * prefix. Only numbers, letters, and underscores please!\n */\n$table_prefix  = 'wp_';\n\n/**\n * WordPress Localized Language, defaults to English.\n *\n * Change this to localize WordPress. A corresponding MO file for the chosen\n * language must be installed to wp-content/languages. For example, install\n * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German\n * language support.\n */\ndefine('WPLANG', '');\n\n/**\n * For developers: WordPress debugging mode.\n *\n * Change this to true to enable the display of notices during development.\n * It is strongly recommended that plugin and theme developers use WP_DEBUG\n * in their development environments.\n */\ndefine('WP_DEBUG', false);\n\n/* That's all, stop editing! Happy blogging. */\n\n/** Absolute path to the WordPress directory. */\nif ( !defined('ABSPATH') )\n	define('ABSPATH', dirname(__FILE__) . '/');\n\n/** Sets up WordPress vars and included files. */\nrequire_once(ABSPATH . 'wp-settings.php');\n",
-			"file": "www/wp-config-sample.php",
-			"file_size": 3177,
-			"file_write_time": 129331107120000000,
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/ajax/more-news.php",
 			"settings":
 			{
-				"buffer_size": 3087,
-				"line_ending": "Windows"
+				"buffer_size": 616,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/wp-load.php",
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-work.php",
 			"settings":
 			{
-				"buffer_size": 2408,
+				"buffer_size": 10319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page.php",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n$page_name = \"work-page\";\n\ninclude ('header.php'); ?>\n\n<?php\ninclude ('nav.php'); ?>\n  \n  <div role=\"banner\" class=\"hero etrade\">\n    <div class=\"wrapper\">\n      <div class=\"container text-center\">\n        <img class=\"hero-img hero-in\"  src=\"/assets/images/hero-etrade.jpg\" />\n      </div>\n    </div>\n  </div>\n\n<div class=\"content-wrapper\">\n  <section class=\"wrapper fade-in one\" role=\"main\">\n    <div class=\"container text-center\">\n      <h1>A better website for the self-directed investor</h1>\n      <h3>E*TRADE is both a pioneer and an innovator in the world of online investing. E*TRADE has a big story to tell. E*TRADE looked to MCD to redesign its public website and demonstrate its value to customers &mdash; from novices to highly advanced investors &mdash; in a compelling and easy to understand way.</h3>\n    </div>\n  </section>\n\n  <section class=\"wrapper fade-in two\">\n    <div class=\"container shift-copy mid-pad\">\n      <img class=\"article-img\" src=\"/assets/images/etrade-best-investing-experience.jpg\" />\n      <h4>Demystifying online investing</h4>\n      <p>User research told us that even more experienced investors may have gaps in their knowledge. With useful comparison tables, plain English descriptions and relevant curated links to educational content, we made sure that everyone could understand the value that E*TRADE has to offer.</p>\n    </div>\n  </section>\n\n  <div class=\"purple fade-in three\" role=\"banner\">\n    <div class=\"wrapper\">\n      <div class=\"container text-center\">\n        <img src=\"/assets/images/etrade-exchange-traded-funds.jpg\" />\n      </div>\n    </div>\n  </div>\n\n  <section class=\"wrapper\">\n    <div class=\"container shift-copy mid-pad\">\n      <h4>Enhanced presentation of E*TRADE's range of products and services</h4>\n      <p>E*TRADE offers more than just online trading. This breadth of solutions was a pleasant surprise to many consumers during our initial research, so we ensured that each key offering had its own distinct section of the website.</p>\n      <img class=\"article-img\" src=\"/assets/images/etrade-compare-investment-choices.jpg\" />\n      <h4>A showcase for all of E*TRADE's powerful tools</h4>\n      <p>Because great tools are at the heart of successful self-directed investing, we created a section clearly explaining all of the features of E*TRADE's tools, highlighting and showcasing the most important with a slideshow at the top of each page.</p>\n      <img class=\"article-img\" src=\"/assets/images/etrade-powerful-tools.jpg\" />\n      <h4>Investing online doesn't mean investing alone</h4>\n      <p>Our research told us that even self-directed investors like to know that there is help at hand if they need it. E*TRADE has a team ready to handle anything from simple queries to managing sizable portfolios and we ensured all types of one-on-one advice were clearly and prominently presented within the website.</p>\n    </div>\n  </section>\n\n  <div class=\"light-green full\" role=\"banner\">\n    <div class=\"wrapper\">\n      <div class=\"container text-center\">\n        <img src=\"/assets/images/etrade-guidance-and-advice.jpg\" />  \n      </div>\n    </div>\n  </div>\n\n  <section class=\"wrapper\">\n    <div class=\"container shift-copy\">\n      <h4>Everything a prospective customer needs to know about E*TRADE in a single page</h4>\n      <p>No one chooses a company to handle their investments, retirement or banking based on a single benefit or feature alone. To help prospects get all the information they need to make a decision quickly and easily, we put all of the compelling reasons to choose E*TRADE in a single, visually appealing page.</p>\n      <img class=\"article-img\" src=\"/assets/images/etrade-experience-and-innovation.jpg\" />\n      <h4>A detailed style guide</h4>\n      <p>Every template used in the site was documented &mdash; font sizes, colors, dimensions down to the pixel and photography; guidelines ensured a smooth build and the ability to launch new content and sections easily in the future.</p>\n    </div>\n  </section>\n\n  <div class=\"wrapper\">\n    <div class=\"container btm-pad\">\n      <div class=\"row\">\n        <div class=\"col-xs-6\"><img class=\"article-img\" src=\"/assets/images/etrade-global-color-palette.jpg\" /></div>\n        <div class=\"col-xs-6\"><img class=\"article-img\" src=\"/assets/images/etrade-template-guide.jpg\" /></div>\n      </div>\n    </div>\n  </div>\n\n  <?php\n  include ('more-work.php'); ?>\n</div>\n\n<?php\ninclude ('footer.php'); ?>",
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/our-work.php",
+			"file_size": 4432,
+			"file_write_time": 130262357870000000,
+			"settings":
+			{
+				"buffer_size": 4432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n$page_name = \"work\";\n\ninclude ('header.php'); ?>\n\n<?php\ninclude ('nav.php'); ?>\n\n<div class=\"wrapper\">\n  <div class=\"container\">\n    <!-- <div class=\"hero\">\n      <div class=\"banner col-1\">\n        <div class=\"background\"></div>\n        <div class=\"text-block\">\n          <h5>Samsung.com</h5>\n          <p class=\"lead\">Innovation and Wonder</p>\n        </div>\n      </div>\n      <div class=\"banner col-2\">\n        <div class=\"background\"></div>\n        <div class=\"text-block\">\n          <h5>Discover Card</h5>\n          <p class=\"lead\">Account Center Redesign</p>\n        </div>\n      </div>\n    </div> -->\n    <div class=\"row top-brands\">\n      <div class=\"col-sm-6\">\n        <a href=\"#\">\n          <img src=\"/assets/images/work-discover.jpg\" />\n          <div class=\"text-center\">\n            <span>Discover</span>\n            <strong>A Better Customer Experience</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-sm-6\">\n        <a href=\"#\">\n          <img src=\"/assets/images/work-samsung.jpg\" />\n          <div class=\"text-center\">\n            <span>Samsung.com</span>\n            <strong>Innovation and Wonder</strong>\n          </div>\n        </a>\n      </div>\n    </div>\n\n    <section >\n      <h1 class=\"text-center hidden-xs\">Working with the world&#8217;s most recognizable brands for over 13 years</h1>\n    </section>\n\n    <div class=\"row brands-container\">\n      <div class=\"col-xs-12 col-sm-8\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-pulse.jpg\" />\n          <div>\n            <span>Pulse Network</span>\n            <strong>A new design for the debit giant</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-etrade.jpg\" />\n          <div>\n            <span>E*Trade.com</span>\n            <strong>A better website for the self-directed investor</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-sesame-street.jpg\" />\n          <div>\n            <span>SesameStreet.org</span>\n            <strong>A new creative vision for Sesame Street &amp; Sesame Workshop </strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-mskcc.jpg\" />\n          <div>\n            <span>MSKCC.org</span>\n            <strong>User-centered design for the new mskcc.org</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-nautica.jpg\" />\n          <div>\n            <span>Nautica.com</span>\n            <strong>Getting fans and customers to dive into Nautica</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-12 col-sm-8\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-macmillan.jpg\" />\n          <div>\n            <span>Macmillan.com</span>\n            <strong>Macmillan publishes a new chapter online</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-drug-free.jpg\" />\n          <div>\n            <span>Drugfree.org</span>\n            <strong>Fighting the good fight at drugfree.org</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-genworth.jpg\" />\n          <div>\n            <span>Genworth</span>\n            <strong>Better decision-making in a time of need</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-tiffany.jpg\" />\n          <div>\n            <span>Tiffany &amp; Co.</span>\n            <strong>Getting every detail right for Tiffany &amp; Co.</strong>\n          </div>\n        </a>\n      </div>\n      <div class=\"col-xs-6 col-sm-4\">\n        <a href=\"our-work.php\">\n          <img src=\"/assets/images/work-daily-candy.jpg\" />\n          <div>\n            <span>DailyCandy</span>\n            <strong>From Email to the web &ndash; migrating dailycandy.com</strong>\n          </div>\n        </a>\n      </div>\n    </div>\n\n    <div class=\"client-list\">\n      <h2 class=\"text-center visible-xs\">Client List</h2>\n      <ul class=\"row list-unstyled\">\n        <li class=\"col-xs-6 col-sm-12\">\n          <ul class=\"list-unstyled row\">\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-ae.jpg\" />\n              <span class=\"visible-xs\">A&amp;E Television</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-aol.jpg\" />\n              <span class=\"visible-xs\">AOL</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-att.jpg\" />\n              <span class=\"visible-xs\">AT&amp;T</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-bill-me-later.jpg\" />\n              <span class=\"visible-xs\">Bill Me Later</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-bio.jpg\" />\n              <span class=\"visible-xs\">Biography Channel</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-capital-one.jpg\" />\n              <span class=\"visible-xs\">Capital One</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-cit.jpg\" />\n              <span class=\"visible-xs\">CIT</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-childrens-aid-society.jpg\" />\n              <span class=\"visible-xs\">Children's Aid Society</span>\n            </li>\n            <li class=\"col-sm-2\">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-coca-cola.jpg\" />\n              <span class=\"visible-xs\">Coca-Cola</span>\n            </li>\n            <li class=\"col-sm-2  visible-xs\">DailyCandy</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-diners-club.jpg\" />\n              <span class=\"visible-xs\">Diners Club</span>\n            </li>\n            <li class=\"col-sm-2  visible-xs\">Discover Card</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-discover-network.jpg\" />\n              <span class=\"visible-xs\">Discover Network</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-discover-bank.jpg\" />\n              <span class=\"visible-xs\">Discover Bank</span>\n            </li>\n            <li class=\"col-sm-2 visible-xs\">Drugfree.org</li>\n            <li class=\"col-sm-2 visible-xs\">E*TRADE</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-forbes.jpg\" />\n              <span class=\"visible-xs\">Forbes</span>\n            </li>\n            <li class=\"col-sm-2 visible-xs\">Genworth Financial</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-hbo.jpg\" />\n              <span class=\"visible-xs\">HBO</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-history-channel.jpg\" />\n              <span class=\"visible-xs\">History Channel</span>\n            </li>\n            <li class=\"col-sm-2 hidden-xs\">\n              <img src=\"/assets/images/work-john-wiley.jpg\" />\n            </li>\n            <li class=\"col-sm-2 hidden-xs\">\n              <img class=\"\" src=\"/assets/images/work-lego.jpg\" />\n            </li>\n            <li class=\"col-sm-2 hidden-xs\">\n              <img src=\"/assets/images/work-london-olympics.jpg\" />\n            </li>\n          </ul>\n        </li>\n        <li class=\"col-xs-6 col-sm-12\">\n          <ul class=\"list-unstyled row\">\n            <li class=\"col-sm-2 visible-xs\">John Wiley &amp; Sons</li>\n            <li class=\"col-sm-2 visible-xs\">LEGO</li>\n            <li class=\"col-sm-2 visible-xs\">London 2012 Olympic Committee</li>\n            <li class=\"col-sm-2 visible-xs\">Macmillan</li>\n            <li class=\"col-sm-2  visible-xs\">Memorial Sloan-Kettering Cancer Center</li>\n            <li class=\"col-sm-2  visible-xs\">Nautica</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-nelnet.jpg\" />\n              <span class=\"visible-xs\">Nelnet</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-nickelodeon.jpg\" />\n              <span class=\"visible-xs\">Nickelodeon</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-pbs.jpg\" />\n              <span class=\"visible-xs\">PBS</span>\n            </li>\n            <li class=\"col-sm-2 hidden-xs\">\n              <img src=\"/assets/images/work-thomas-and-friends.jpg\" />\n            </li>\n            <li class=\"col-sm-2  visible-xs\">Pulse</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-radio-city.jpg\" />\n              <span class=\"visible-xs\">Radio City Music Hall</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-rdio.jpg\" />\n              <span class=\"visible-xs\">Rdio</span>\n            </li>\n            <li class=\"col-sm-2  visible-xs\">Samsung</li>\n            <li class=\"col-sm-2  visible-xs\">Sesame Workshop</li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-sephora.jpg\" />\n              <span class=\"visible-xs\">Sephora</span>\n            </li>\n            <li class=\"col-sm-2 \">\n              <img class=\"hidden-xs\" src=\"/assets/images/work-sirius-xm.jpg\" />\n              <span class=\"visible-xs\">SiriusXM</span>\n            </li>\n            <li class=\"col-sm-2 visible-xs\">Thomas and Friends</li>\n            <li class=\"col-sm-2  visible-xs\">Tiffany &amp; Co.</li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n\n  </div><!--end: container-->\n</div><!--end:wrapper-->\n\n\n<?php\ninclude ('footer.php'); ?>",
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/our-work-landing.php",
+			"file_size": 10581,
+			"file_write_time": 130262357870000000,
+			"settings":
+			{
+				"buffer_size": 10581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/tag.php",
+			"settings":
+			{
+				"buffer_size": 2394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/loop-lab.php",
+			"settings":
+			{
+				"buffer_size": 977,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"logo\">\n  <a href=\"#\">Magnani Caruso Dutton</a>\n</div>\n<nav class=\"nav-container\" role=\"navigation\">\n  <ul class=\"nav-links\">\n    <li><a href=\"#\" class=\"link-0\">Home</a></li>\n    <li><a href=\"our-work-landing.php\" class=\"link-1\">Our Work</a></li>\n    <li><a href=\"/news\" class=\"link-2\">News</a></li>\n    <li><a href=\"#TODO\" class=\"link-3\">About Us</a></li>\n    <li><a href=\"/careers\" class=\"link-4\">Careers</a></li>\n    <li><a href=\"/lab\" class=\"link-5\">Lab</a></li>\n    <li><a href=\"/contact\" class=\"link-6\">Contact</a></li>\n  </ul>\n</nav>",
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/nav.inc",
+			"file_size": 551,
+			"file_write_time": 130260239050000000,
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-lab.php",
+			"settings":
+			{
+				"buffer_size": 1217,
 				"line_ending": "Unix"
 			}
 		}
@@ -255,6 +321,32 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/work/tiffany.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/work/discover.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/lab-tag.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/single.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/single-lab.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-news.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-work.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/header.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/loop-news.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/article-share.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/header.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/lab.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/scss/lab.scss",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/lab-footer.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/lab-banner.php",
+		"/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/singe-lab.php",
+		"/Users/eilinora/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Work/Personal/website/www/wp-load.php",
+		"/Work/Personal/website/www/wp-content/themes/portfolio/style.css",
+		"/Users/eilinora/Downloads/index.php",
+		"/Work/Personal/website/www/wp-content/plugins/portfolio/index.php",
+		"/Work/Personal/website/www/wp-content/themes/portfolio/functions.php",
+		"/Work/Personal/website/wp-config.php",
+		"/Work/Personal/website/www/.htaccess",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/Work/Personal/website/www/wp-config-sample.php",
 		"/Work/Personal/labs/submission/rodeo-1/lhutchek/www/assets/js/main.js",
 		"/Work/Personal/labs/weather_app/www/index.html",
 		"/Work/Personal/labs/weather_app/www/assets/css/global.css",
@@ -279,6 +371,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lab-article",
 			"/assets",
 			"DEFAULT_CONDITION",
 			"snowing",
@@ -359,24 +452,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-config.php",
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3086,
+						"buffer_size": 3296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								947,
-								947
+								2238,
+								2238
 							]
 						],
 						"settings":
@@ -384,30 +477,34 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -416,38 +513,36 @@
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 142.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "www/wp-config-sample.php",
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/ajax/more-news.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3087,
+						"buffer_size": 616,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								473,
+								473
 							]
 						],
 						"settings":
@@ -455,30 +550,34 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -487,16 +586,14 @@
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -506,11 +603,155 @@
 				},
 				{
 					"buffer": 2,
-					"file": "www/wp-load.php",
-					"semi_transient": true,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-work.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2408,
+						"buffer_size": 10319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/our-work.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4432,
 						"regions":
 						{
 						},
@@ -519,6 +760,229 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/_templates/our-work-landing.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/tag.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/loop-lab.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								781,
+								781
 							]
 						],
 						"settings":
@@ -568,7 +1032,152 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/includes/nav.inc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								223
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Volumes/Devs/lhutchek/public/mcd-public/www/wp-content/themes/mcd/page-lab.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								648,
+								648
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -596,11 +1205,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.86309025895,
 			1.0
 		],
 		"rows":
@@ -651,7 +1267,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
