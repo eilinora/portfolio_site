@@ -1,20 +1,12 @@
-# SASS Cache IGNORE #
-#######################
-~/.sass-cache
-css/.sass-cache/
-css/.sass-cache/
-
-
-# Compiled css #
-######################
-css/*.css
-!css/global.css
-
-
-# OS generated files #
-######################
-.DS_Store*
-._*
-ehthumbs.db
-Icon?
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.DS_Store
 Thumbs.db
+
+
+# Thumbnails
+._*
